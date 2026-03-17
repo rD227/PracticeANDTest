@@ -32,6 +32,37 @@
       "group": { "kind": "build", "isDefault": false },
       "problemMatcher": [],
       "detail": "使用 g++ 编译并运行 C++ 程序"      
+    },
+    {
+      "label": "build Kotlin active file",
+      "type": "shell",
+      "command": "kotlinc",
+      "args": [
+        "${file}",
+        "-include-runtime",
+        "-d",
+        "${fileDirname}\\${fileBasenameNoExtension}.jar"
+      ],
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "build", "isDefault": false },
+      "problemMatcher": [],
+      "detail": "使用 kotlinc 编译当前 Kotlin 文件为可运行 jar"
+    },
+    {
+      "label": "build and run Kotlin active file",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "kotlinc '${file}' -include-runtime -d '${fileDirname}\\${fileBasenameNoExtension}.jar'; if ($LASTEXITCODE -eq 0) { java -jar '${fileDirname}\\${fileBasenameNoExtension}.jar' }"
+      ],
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "build", "isDefault": false },
+      "problemMatcher": [],
+      "detail": "编译并运行当前 Kotlin 文件"
     }
   ]
 }
