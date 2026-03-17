@@ -1,0 +1,6 @@
+#def generate_key():
+    #return SWFX-FREE- + str(random.randint(1000, 9999))
+#
+## Call the function to generate the key for the free full version of Stardock WindowFX
+#full_version_key = generate_key()
+#print(full_version_key)

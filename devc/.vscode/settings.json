@@ -1,0 +1,33 @@
+{
+    // 文件类型关联
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "iomanip": "cpp"
+    },
+    //"editor.autoClosingQuotes": "always",
+    //"editor.acceptSuggestionOnCommitCharacter": false,
+    //"editor.acceptSuggestionOnEnter": "off",
+    //ditor.autoClosingQuotes": "always",
+    //ditor.acceptSuggestionOnCommitCharacter": false,
+    // 关闭红色波浪线提示
+    "C_Cpp.errorSquiggles": "disabled",
+    // clang-format 配置
+    "C_Cpp.clang_format_style": "file",
+    "C_Cpp.clang_format_fallbackStyle": "none",
+    // 保存时自动格式化
+    "editor.formatOnSave": true,
+    // 指定 C++ 默认格式化器
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.stickyScroll.enabled": true,
+    // Code Runner 配置
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ -mconsole $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe",
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "editor.stickyScroll.defaultModel": "indentationModel"
+}
