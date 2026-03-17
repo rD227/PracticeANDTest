@@ -1,9 +1,0 @@
-.\objects\misc_2.o: Libraries\misc.c
-.\objects\misc_2.o: Libraries\misc.h
-.\objects\misc_2.o: D:\Keli\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
-.\objects\misc_2.o: .\RTE\_Target_1\RTE_Components.h
-.\objects\misc_2.o: D:\Keli\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h
-.\objects\misc_2.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\misc_2.o: D:\Keli\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h
-.\objects\misc_2.o: D:\Keli\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h
-.\objects\misc_2.o: D:\Keli\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
